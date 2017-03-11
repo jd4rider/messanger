@@ -12,6 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require cable
 //= require turbolinks
-//= require_tree .
-//= require_conversations

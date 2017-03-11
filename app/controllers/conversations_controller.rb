@@ -1,6 +1,10 @@
 class ConversationsController < ApplicationController
   def index
     @conversations = Conversation.participating(current_user).order('updated_at DESC')
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   before_action :set_conversation, except: [:index]
